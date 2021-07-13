@@ -151,9 +151,10 @@ main{
     
 .course{
     margin-top: 30px;
+    padding: 5px 5px;
     /* border: 1px solid black; */
-    box-shadow: 5px 10px 8px #888888;
-    border-radius: 20px;
+    box-shadow: 5px 5px 40px #888888;
+    border-radius: 10px;
 }
 .course img{
     width: 224px;
@@ -217,24 +218,31 @@ main{
 
     .section-title{
         text-align: center;
-        font-weight: 700;
+        font-size: 30px;
     }
 
-.player, .blog, .course{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .player, .blog, .course{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .course .course-total{
+        font-size: 15px;
+    }
   
  }
 
  @media only screen and (max-width: 1024px) and (min-width: 688px) {
 
-    .players , .courses{
+    .courses{
         grid-template-columns: repeat(2,1fr);
     }
     .container{
         width: 95%;
+    }
+
+    .players{
+        grid-template-columns: repeat(3,1fr);
     }
      
  }
